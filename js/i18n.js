@@ -4,6 +4,8 @@ var currentLang = localStorage.getItem('preferredLang') || 'zh';
 // Translation data embedded directly in HTML
 var translations = {
   "en": {
+    "pageTitle": "Gooyoung - Digital Transformation | AI-Powered Development | Gov Grants Advisor",
+    "metaDescription": "Gooyoung provides AI-powered web development, e-commerce platforms, and digital transformation services for Ontario businesses. Expert CDAP & DMS government grant advisors - save up to $2,500 on your digital project.",
     "nav": {
       "home": "HOME",
       "about": "ABOUT",
@@ -186,10 +188,14 @@ var translations = {
       "locationDesc": "Based in Toronto, serving all of Ontario. Supporting online Zoom/Meet or in-person meetings within GTA.",
       "qrScan": "Scan QR or search ID to add friend",
       "openChat": "Open Chat Directly",
-      "openApp": "Open in App"
+      "openApp": "Open in App",
+      "wechat": "WeChat",
+      "phone": "Direct Call"
     }
   },
   "zh": {
+    "pageTitle": "Gooyoung - 数字化转型 | AI 驱动开发 | 政府补贴顾问",
+    "metaDescription": "Gooyoung 为安大略企业提供 AI 智能网站开发、电商平台和数字化转型服务。专业 CDAP 和 DMS 政府补贴顾问，帮助您节省高达 $2,500 项目费用。",
     "nav": {
       "home": "首页",
       "about": "关于",
@@ -370,7 +376,9 @@ var translations = {
       "locationDesc": "基于多伦多，服务全安省。支持线上 Zoom/Meet 或 GTA 线下约见。",
       "qrScan": "请扫码或搜索 ID 添加好友",
       "openChat": "直接打开对话",
-      "openApp": "在 App 中打开"
+      "openApp": "在 App 中打开",
+      "wechat": "微信",
+      "phone": "电话"
     }
   }
 };
@@ -385,6 +393,28 @@ function getNestedValue(obj, path) {
 
 function applyTranslations(lang) {
     currentLanguage = lang;
+    
+    // Update page title
+    if (translations[lang] && translations[lang].pageTitle) {
+        document.title = translations[lang].pageTitle;
+    }
+    
+    // Update meta description
+    if (translations[lang] && translations[lang].metaDescription) {
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            metaDesc.setAttribute('content', translations[lang].metaDescription);
+        }
+        // Update Open Graph description
+        var ogDesc = document.querySelector('meta[property="og:description"]');
+        if (ogDesc) {
+            ogDesc.setAttribute('content', translations[lang].metaDescription);
+        }
+    }
+    
+    // Update html lang attribute
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    
     const elements = document.querySelectorAll('[data-i18n]');
     
     elements.forEach(element => {
