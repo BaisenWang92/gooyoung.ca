@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gooyoung - AI 驱动开发 | 数字化转型专家</title>
+	<link rel="icon" type="image/svg+xml" href="images/logo/logo.svg">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;700&family=Space+Mono:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/language-switch.css">
+	<link rel="stylesheet" type="text/css" href="css/hero-banner.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="vendor/html5shiv.js"></script>
+		<script src="vendor/respond.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/i18n.js"></script>
+</head>
+<body>
+	<div class="main-page-wrapper">
+		<header class="theme-main-header">
+			<div class="container">
+				<a href="index.html" class="logo float-left tran4s">
+		<img src="images/logo/logo.svg" alt="Gooyoung Logo">
+					<span class="logo-text">gooyoung</span>
+				</a>
+				<nav class="navbar float-right theme-main-menu one-page-menu">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							Menu
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#home" data-i18n="nav.home">HOME</a></li>
+							<li><a href="#about-us" data-i18n="nav.about">ABOUT</a></li>
+							<li><a href="#service-section" data-i18n="nav.services">SERVICES</a></li>
+							<li><a href="#project-section" data-i18n="nav.portfolio">PORTFOLIO</a></li>
+							<li><a href="#ai-section" data-i18n="nav.ai">AI TECH</a></li>
+							<li><a href="#grants-section" data-i18n="nav.grants">GRANTS</a></li>
+							<li><a href="#contact-section" data-i18n="nav.contact">CONTACT</a></li>
+							<li class="language-switch">
+								<a href="javascript:void(0)" id="lang-en" class="active" onclick="switchLanguage('en')">EN</a>
+								<span>/</span>
+								<a href="javascript:void(0)" id="lang-zh" onclick="switchLanguage('zh')">中文</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div id="home" class="banner hero-banner">
+			<div class="scanline-banner"></div>
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" data-slide="1">
+						<div class="slide-bg-overlay"></div>
+						<div class="slide-content">
+							<div class="badge ai-pulse">
+								<i class="fa-solid fa-microchip"></i> <span data-i18n="banner.slide1.badge">AI-POWERED DEVELOPMENT</span>
+							</div>
+							<h2 class="hero-title"><span data-i18n="banner.slide1.title">AI 智能设计</span><br><span class="subtitle-text" data-i18n="banner.slide1.subtitle">重塑数字体验</span></h2>
+							<p class="hero-description" data-i18n="banner.slide1.description">
+								利用先进的人工智能技术，我们将建站周期缩短了 70%。<br>
+								不仅仅是速度，更是为您量身定制的极致视觉呈现。
+							</p>
+							<button class="cta-button" data-i18n="banner.slide1.button">了解我们的 AI 流程</button>
+						</div>
+					</div>
+
+					<div class="swiper-slide" data-slide="2">
+						<div class="slide-bg-overlay"></div>
+						<div class="slide-content">
+							<div class="badge badge-red">
+								<i class="fa-solid fa-file-invoice-dollar"></i> <span data-i18n="banner.slide2.badge">GOVERNMENT GRANT PROGRAM</span>
+							</div>
+							<h2 class="hero-title"><span data-i18n="banner.slide2.title">利用政策红利</span><br><span class="subtitle-cyan" data-i18n="banner.slide2.subtitle">为您省下 $2,500</span></h2>
+							<p class="hero-description" data-i18n="banner.slide2.description">
+								作为 CDAP 与 DMS 的资深咨询专家，我们帮您解读安省数字化补贴。<br>
+								让政府为您的企业转型买单，实现真正意义上的"零成本"启动。
+							</p>
+							<button class="cta-button" data-i18n="banner.slide2.button">立即测算补贴额度</button>
+						</div>
+					</div>
+
+					<div class="swiper-slide" data-slide="3">
+						<div class="slide-bg-overlay"></div>
+						<div class="slide-content">
+							<div class="badge">
+								<i class="fa-solid fa-shield-halved"></i> <span data-i18n="banner.slide3.badge">SECURE & SCALABLE</span>
+							</div>
+							<h2 class="hero-title"><span data-i18n="banner.slide3.title">全托管式服务</span><br><span class="subtitle-text" data-i18n="banner.slide3.subtitle">您只管做生意</span></h2>
+							<p class="hero-description" data-i18n="banner.slide3.description">
+								从域名、服务器维护到 SEO 排名监控，我们是您的外部 CTO 团队。<br>
+								在 Bradford，为全球安省企业提供最硬核的技术支持。
+							</p>
+							<button class="cta-button" data-i18n="banner.slide3.button">开始您的转型计划</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+
+		<section id="about-us">
+			<div class="tech-grid"></div>
+			<div class="scan-line"></div>
+			
+			<div class="container">
+				<span class="section-title-bg">EXPERT</span>
+				
+				<div class="row">
+					<!-- 左侧：视觉核心 -->
+					<div class="col-lg-5 col-md-6 col-sm-12 about-left">
+						<div class="about-badge">
+							<div class="about-badge-line"></div>
+							<span class="about-badge-text" data-i18n="about.badge">About Gooyoung</span>
+						</div>
+						
+						<h2 data-i18n="about.title" data-i18n-html="true">
+							Exceptional <span class="gradient-text">Digital</span> Engineering
+						</h2>
+						
+						<p class="about-description" data-i18n="about.description" data-i18n-html="true">
+							Rooted in North America, we don't just write code — we build sustainable digital foundations through the fusion of <span class="highlight">AI technology and government incentives</span>.
+						</p>
+						
+						<a href="#contact-section" class="cta-btn-modern">
+							<span data-i18n="about.cta">Get Expert Consultation</span> <i class="fa-solid fa-arrow-right-long"></i>
+						</a>
+					</div>
+
+					<!-- 右侧：分点阐述 -->
+					<div class="col-lg-7 col-md-6 col-sm-12">
+						<div class="row">
+							<!-- 核心能力 1 -->
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="glass-card">
+									<div class="row">
+										<div class="col-lg-2 col-md-2 col-sm-3">
+											<span class="group-number">01</span>
+										</div>
+										<div class="col-lg-10 col-md-10 col-sm-9">
+											<h4 data-i18n="about.card1.title">Digital Business Transformation</h4>
+											<p data-i18n="about.card1.description">Code is merely a tool. We help enterprises leap from traditional linear operations to future-ready architectures powered by data and AI, ensuring every investment yields solid market returns in the digital economy.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 核心能力 2 -->
+							<div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 24px;">
+								<div class="glass-card">
+									<div class="row">
+										<div class="col-lg-2 col-md-2 col-sm-3">
+											<span class="group-number">02</span>
+										</div>
+										<div class="col-lg-10 col-md-10 col-sm-9">
+											<h4 data-i18n="about.card2.title">Engineering Excellence</h4>
+											<p data-i18n="about.card2.description">From high-concurrency distributed systems to deep learning models, every decision we make undergoes rigorous stress testing and precise ROI calculations to maximize your business value.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 实力指标 -->
+							<div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 32px;">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<div class="metric-card dark">
+											<span class="metric-number">98%</span>
+											<span class="metric-label" data-i18n="about.metric1">Grant Approval</span>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<div class="metric-card blue">
+											<span class="metric-number">3.5X</span>
+											<span class="metric-label" data-i18n="about.metric2">Dev Velocity</span>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<div class="metric-card light">
+											<span class="metric-number">24/7</span>
+											<span class="metric-label" data-i18n="about.metric3">Monitoring</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="service-section" style="position: relative; background: #050b14; padding: 100px 0; overflow: hidden;">
+			<!-- 背景网格 -->
+			<div style="position: absolute; inset: 0; background-image: radial-gradient(circle at 2px 2px, rgba(0, 209, 255, 0.07) 1px, transparent 0); background-size: 40px 40px; opacity: 0.1;"></div>
+			<!-- 扫描线 -->
+			<div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, #00D1FF, transparent); animation: scan 8s linear infinite; opacity: 0.15;"></div>
+			
+			<div class="container" style="position: relative; z-index: 10;">
+				<!-- 标题区 -->
+				<div style="margin-bottom: 80px; display: flex; flex-direction: column;">
+					<span data-i18n="services.title_label" style="font-size: 10px; font-weight: 900; letter-spacing: 1em; color: #00D1FF; text-transform: uppercase; margin-bottom: 16px; display: inline-block; width: fit-content;">CORE SERVICES</span>
+					<h3 data-i18n="services.description" style="font-size: 56px; font-weight: 900; color: #FFFFFF; letter-spacing: -0.02em; max-width: 500px;">我们的服务矩阵</h3>
+				</div>
+
+				<!-- 服务卡片网格 -->
+				<div class="row">
+					<!-- Service 1: Brand Website -->
+					<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 32px;">
+						<div class="service-card-glass" style="background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); border-left: 2px solid #E63946; padding: 40px; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); position: relative; overflow: hidden; cursor: pointer; min-height: 400px; display: flex; flex-direction: column;" onmouseover="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.transform='translateY(-12px)'; this.style.borderLeftColor='#00D1FF'; this.style.boxShadow='0 30px 60px rgba(0, 0, 0, 0.5)'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, #00D1FF, transparent)';" onmouseout="this.style.background='rgba(255, 255, 255, 0.02)'; this.style.transform='translateY(0)'; this.style.borderLeftColor='#E63946'; this.style.boxShadow='none'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent)';">
+							<span style="position: absolute; top: 20px; right: 20px; font-family: 'Courier New', monospace; font-size: 9px; color: rgba(255, 255, 255, 0.2); letter-spacing: 1px;">DEV_01</span>
+							<div style="width: 45px; height: 45px; background: linear-gradient(135deg, #E63946, #9b1c2e); color: white; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 1.2rem; clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%); box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3); transition: all 0.4s ease;" class="service-icon"><i class="fa fa-desktop"></i></div>
+							<h6 data-i18n="services.service1.title" style="font-size: 18px; font-weight: 900; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; color: #FFFFFF; transition: all 0.3s;">Brand Website</h6>
+							<p data-i18n="services.service1.description" style="color: #B4B8C0; font-size: 13px; line-height: 1.7; margin: 0 0 20px 0;">Custom-built for North American businesses, optimized for lightning-fast load times and SEO-friendly architecture.</p>
+							<div class="service-divider" style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent); transition: all 0.3s;"></div>
+						</div>
+					</div>
+
+					<!-- Service 2: E-Commerce -->
+					<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 32px;">
+						<div class="service-card-glass" style="background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); border-left: 2px solid #E63946; padding: 40px; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); position: relative; overflow: hidden; cursor: pointer; min-height: 400px; display: flex; flex-direction: column;" onmouseover="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.transform='translateY(-12px)'; this.style.borderLeftColor='#00D1FF'; this.style.boxShadow='0 30px 60px rgba(0, 0, 0, 0.5)'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, #00D1FF, transparent)';" onmouseout="this.style.background='rgba(255, 255, 255, 0.02)'; this.style.transform='translateY(0)'; this.style.borderLeftColor='#E63946'; this.style.boxShadow='none'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent)';">
+							<span style="position: absolute; top: 20px; right: 20px; font-family: 'Courier New', monospace; font-size: 9px; color: rgba(255, 255, 255, 0.2); letter-spacing: 1px;">ECO_02</span>
+							<div style="width: 45px; height: 45px; background: linear-gradient(135deg, #E63946, #9b1c2e); color: white; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 1.2rem; clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%); box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3); transition: all 0.4s ease;" class="service-icon"><i class="fa fa-shopping-cart"></i></div>
+							<h6 data-i18n="services.service2.title" style="font-size: 18px; font-weight: 900; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; color: #FFFFFF; transition: all 0.3s;">E-Commerce Platform</h6>
+							<p data-i18n="services.service2.description" style="color: #B4B8C0; font-size: 13px; line-height: 1.7; margin: 0 0 20px 0;">Deep integration with payment gateways and inventory systems. High-concurrency ready with seamless mobile shopping experience.</p>
+							<div class="service-divider" style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent); transition: all 0.3s;"></div>
+						</div>
+					</div>
+
+					<!-- Service 3: Government Grants -->
+					<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 32px;">
+						<div class="service-card-glass" style="background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); border-left: 2px solid #E63946; padding: 40px; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); position: relative; overflow: hidden; cursor: pointer; min-height: 400px; display: flex; flex-direction: column;" onmouseover="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.transform='translateY(-12px)'; this.style.borderLeftColor='#00D1FF'; this.style.boxShadow='0 30px 60px rgba(0, 0, 0, 0.5)'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, #00D1FF, transparent)';" onmouseout="this.style.background='rgba(255, 255, 255, 0.02)'; this.style.transform='translateY(0)'; this.style.borderLeftColor='#E63946'; this.style.boxShadow='none'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent)';">
+							<span style="position: absolute; top: 20px; right: 20px; font-family: 'Courier New', monospace; font-size: 9px; color: rgba(255, 255, 255, 0.2); letter-spacing: 1px;">GOV_03</span>
+							<div style="width: 45px; height: 45px; background: linear-gradient(135deg, #E63946, #9b1c2e); color: white; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 1.2rem; clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%); box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3); transition: all 0.4s ease;" class="service-icon"><i class="fa fa-file-invoice-dollar"></i></div>
+							<h6 data-i18n="services.service3.title" style="font-size: 18px; font-weight: 900; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; color: #FFFFFF; transition: all 0.3s;">Grant Consulting</h6>
+							<p data-i18n="services.service3.description" style="color: #B4B8C0; font-size: 13px; line-height: 1.7; margin: 0 0 20px 0;">Expert guidance on CDAP, DMS and Canadian digital transformation subsidies. Maximize your government funding eligibility.</p>
+							<div class="service-divider" style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent); transition: all 0.3s;"></div>
+						</div>
+					</div>
+
+					<!-- Service 4: AI Integration -->
+					<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 32px;">
+						<div class="service-card-glass" style="background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); border-left: 2px solid #E63946; padding: 40px; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); position: relative; overflow: hidden; cursor: pointer; min-height: 400px; display: flex; flex-direction: column;" onmouseover="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.transform='translateY(-12px)'; this.style.borderLeftColor='#00D1FF'; this.style.boxShadow='0 30px 60px rgba(0, 0, 0, 0.5)'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, #00D1FF, transparent)';" onmouseout="this.style.background='rgba(255, 255, 255, 0.02)'; this.style.transform='translateY(0)'; this.style.borderLeftColor='#E63946'; this.style.boxShadow='none'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent)';">
+							<span style="position: absolute; top: 20px; right: 20px; font-family: 'Courier New', monospace; font-size: 9px; color: rgba(255, 255, 255, 0.2); letter-spacing: 1px;">AI_04</span>
+							<div style="width: 45px; height: 45px; background: linear-gradient(135deg, #E63946, #9b1c2e); color: white; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 1.2rem; clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%); box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3); transition: all 0.4s ease;" class="service-icon"><i class="fa fa-robot"></i></div>
+							<h6 data-i18n="services.service4.title" style="font-size: 18px; font-weight: 900; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; color: #FFFFFF; transition: all 0.3s;">AI Integration</h6>
+							<p data-i18n="services.service4.description" style="color: #B4B8C0; font-size: 13px; line-height: 1.7; margin: 0 0 20px 0;">Harness generative AI for intelligent customer service and workflow automation. 24/7 automated business responses powered by LLMs.</p>
+							<div class="service-divider" style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent); transition: all 0.3s;"></div>
+						</div>
+					</div>
+
+					<!-- Service 5: Growth Strategy -->
+					<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 32px;">
+						<div class="service-card-glass" style="background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); border-left: 2px solid #E63946; padding: 40px; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); position: relative; overflow: hidden; cursor: pointer; min-height: 400px; display: flex; flex-direction: column;" onmouseover="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.transform='translateY(-12px)'; this.style.borderLeftColor='#00D1FF'; this.style.boxShadow='0 30px 60px rgba(0, 0, 0, 0.5)'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, #00D1FF, transparent)';" onmouseout="this.style.background='rgba(255, 255, 255, 0.02)'; this.style.transform='translateY(0)'; this.style.borderLeftColor='#E63946'; this.style.boxShadow='none'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent)';">
+							<span style="position: absolute; top: 20px; right: 20px; font-family: 'Courier New', monospace; font-size: 9px; color: rgba(255, 255, 255, 0.2); letter-spacing: 1px;">MKT_05</span>
+							<div style="width: 45px; height: 45px; background: linear-gradient(135deg, #E63946, #9b1c2e); color: white; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 1.2rem; clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%); box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3); transition: all 0.4s ease;" class="service-icon"><i class="fa fa-chart-line"></i></div>
+							<h6 data-i18n="services.service5.title" style="font-size: 18px; font-weight: 900; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; color: #FFFFFF; transition: all 0.3s;">Growth Strategy</h6>
+							<p data-i18n="services.service5.description" style="color: #B4B8C0; font-size: 13px; line-height: 1.7; margin: 0 0 20px 0;">North American market-optimized SEO and content strategy. Rank higher on Google and social media to capture local high-quality leads.</p>
+							<div class="service-divider" style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent); transition: all 0.3s;"></div>
+						</div>
+					</div>
+
+					<!-- Service 6: Cloud Operations -->
+					<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 32px;">
+						<div class="service-card-glass" style="background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); border-left: 2px solid #E63946; padding: 40px; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); position: relative; overflow: hidden; cursor: pointer; min-height: 400px; display: flex; flex-direction: column;" onmouseover="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.transform='translateY(-12px)'; this.style.borderLeftColor='#00D1FF'; this.style.boxShadow='0 30px 60px rgba(0, 0, 0, 0.5)'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, #00D1FF, transparent)';" onmouseout="this.style.background='rgba(255, 255, 255, 0.02)'; this.style.transform='translateY(0)'; this.style.borderLeftColor='#E63946'; this.style.boxShadow='none'; this.querySelector('.service-divider').style.background='linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent)';">
+							<span style="position: absolute; top: 20px; right: 20px; font-family: 'Courier New', monospace; font-size: 9px; color: rgba(255, 255, 255, 0.2); letter-spacing: 1px;">SEC_06</span>
+							<div style="width: 45px; height: 45px; background: linear-gradient(135deg, #E63946, #9b1c2e); color: white; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 1.2rem; clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%); box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3); transition: all 0.4s ease;" class="service-icon"><i class="fa fa-shield-halved"></i></div>
+							<h6 data-i18n="services.service6.title" style="font-size: 18px; font-weight: 900; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; color: #FFFFFF; transition: all 0.3s;">Cloud Operations</h6>
+							<p data-i18n="services.service6.description" style="color: #B4B8C0; font-size: 13px; line-height: 1.7; margin: 0 0 20px 0;">Bank-grade data security and round-the-clock system monitoring. Your digital assets remain rock-solid under heavy load and emerging threats.</p>
+							<div class="service-divider" style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent); transition: all 0.3s;"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- CTA 按钮 -->
+				<div style="margin-top: 80px; text-align: center;">
+					<a href="#contact-section" style="border: 1px solid #00D1FF; color: #00D1FF; padding: 16px 45px; font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: 2px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 15px; text-decoration: none; background: transparent; cursor: pointer;" onmouseover="this.style.background='#00D1FF'; this.style.color='#0A2540'; this.style.boxShadow='0 0 30px rgba(0, 209, 255, 0.3)';" onmouseout="this.style.background='transparent'; this.style.color='#00D1FF'; this.style.boxShadow='none';">
+						<span data-i18n="services.cta">定制您的数字化蓝图</span>
+						<svg style="width: 16px; height: 16px; display: inline-block;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+					</a>
+				</div>
+			</div>
+
+			<style>
+				@keyframes scan {
+					0% { top: 0; }
+					100% { top: 100%; }
+				}
+			</style>
+		</div>
+
+		<div id="project-section">
+			<div class="container">
+				<div class="theme-title">
+					<h2 data-i18n="projects.title">OUR AWESOME PROJECTS</h2>
+					<p data-i18n="projects.description">A selection of portfolio projects showcasing our expertise in e-commerce platforms, business websites, and digital solutions across various industries.</p>
+				</div>
+				<div class="project-menu">
+					<ul>
+						<li class="filter active tran3s" data-filter="all" data-i18n="projects.all">All Projects</li>
+						<li class="filter tran3s" data-filter=".mall" data-i18n="projects.ecommerce">E-Commerce Platforms</li>
+						<li class="filter tran3s" data-filter=".official" data-i18n="projects.business">Business Websites</li>
+					</ul>
+				</div>
+				<div class="project-gallery clear-fix">
+					<!-- E-Commerce: Electro Store -->
+					<div class="mix grid-item mall">
+						<div class="single-img" style="height: 300px; overflow: hidden;">
+							<img src="portfolio/Electro-Bootstrap-1.0.0/electronics-website-template.jpg" alt="Electro Store - Electronics E-Commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+							<div class="opacity">
+								<div class="border-shape"><div><div>
+								<h6><a href="portfolio/Electro-Bootstrap-1.0.0/index.html" target="_blank" data-i18n="portfolio.electro">Electro Store</a></h6>
+								<ul>
+									<li data-i18n="portfolio.ecommerce">E-Commerce</li>
+									<li data-i18n="portfolio.electronics">Electronics</li>
+									<li data-i18n="portfolio.bootstrap">Bootstrap</li>
+									<li data-i18n="portfolio.responsive">Responsive Design</li>
+									</ul></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- E-Commerce: Kaira Fashion Store -->
+				<div class="mix grid-item mall">
+					<div class="single-img" style="height: 300px; overflow: hidden;">
+						<img src="portfolio/kaira-1.0.0/images/banner-image-1.jpg" alt="Kaira - Fashion E-Commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+						<div class="opacity">
+							<div class="border-shape"><div><div>
+							<h6><a href="portfolio/kaira-1.0.0/index.html" target="_blank" data-i18n="portfolio.kaira">Kaira Fashion</a></h6>
+							<ul>
+								<li data-i18n="portfolio.ecommerce">E-Commerce</li>
+								<li data-i18n="portfolio.fashion">Fashion</li>
+								<li data-i18n="portfolio.bootstrap5">Bootstrap 5</li>
+								<li data-i18n="portfolio.modern">Modern Design</li>
+								</ul></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<!-- E-Commerce: Cozastore -->
+					<div class="mix grid-item mall">
+						<div class="single-img" style="height: 300px; overflow: hidden;">
+						<img src="portfolio/cozastore-master/images/banner-01.jpg" alt="Cozastore - Fashion E-Commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+							<div class="opacity">
+								<div class="border-shape"><div><div>
+								<h6><a href="portfolio/cozastore-master/index.html" target="_blank" data-i18n="portfolio.cozastore">Cozastore</a></h6>
+								<ul>
+									<li data-i18n="portfolio.ecommerce">E-Commerce</li>
+									<li data-i18n="portfolio.fashion">Fashion</li>
+									<li data-i18n="portfolio.shopping">Shopping Cart</li>
+									<li data-i18n="portfolio.ui">Modern UI</li>
+									</ul></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- E-Commerce: Furni -->
+					<div class="mix grid-item mall">
+						<div class="single-img" style="height: 300px; overflow: hidden;">
+						<img src="portfolio/furni-1.0.0/images/why-choose-us-img.jpg" alt="Furni - Furniture E-Commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+							<div class="opacity">
+								<div class="border-shape"><div><div>
+								<h6><a href="portfolio/furni-1.0.0/index.html" target="_blank" data-i18n="portfolio.furni">Furni</a></h6>
+								<ul>
+									<li data-i18n="portfolio.ecommerce">E-Commerce</li>
+									<li data-i18n="portfolio.furniture">Furniture</li>
+									<li data-i18n="portfolio.catalog">Product Catalog</li>
+									<li data-i18n="portfolio.checkout">Checkout System</li>
+									</ul></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Business Website: Feane Restaurant -->
+					<div class="mix grid-item official">
+						<div class="single-img" style="height: 300px; overflow: hidden;">
+							<img src="images/project/2.jpg" alt="Feane Restaurant - Restaurant Official Website" style="width: 100%; height: 100%; object-fit: cover;">
+							<div class="opacity">
+								<div class="border-shape"><div><div>
+								<h6><a href="portfolio/feane-1.0.0/index.html" target="_blank" data-i18n="portfolio.feane">Feane Restaurant</a></h6>
+								<ul>
+									<li data-i18n="portfolio.food">Food & Beverage</li>
+									<li data-i18n="portfolio.restaurant">Restaurant</li>
+									<li data-i18n="portfolio.modern">Modern Design</li>
+									<li data-i18n="portfolio.fullstack">Full Stack</li>
+									</ul></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Business Website: Organic -->
+					<div class="mix grid-item official">
+						<div class="single-img" style="height: 300px; overflow: hidden;">
+						<img src="portfolio/organic-1.0.0/images/banner-1.jpg" alt="Organic - Organic Products Official Website" style="width: 100%; height: 100%; object-fit: cover;">
+							<div class="opacity">
+								<div class="border-shape"><div><div>
+								<h6><a href="portfolio/organic-1.0.0/index.html" target="_blank" data-i18n="portfolio.organic">Organic Store</a></h6>
+								<ul>
+									<li data-i18n="portfolio.natural">Natural Products</li>
+									<li data-i18n="portfolio.brand">Brand Website</li>
+									<li data-i18n="portfolio.clean">Clean Design</li>
+									<li data-i18n="portfolio.ecofriendly">Eco-Friendly</li>
+									</ul></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Business Website: Clinic -->
+					<div class="mix grid-item official">
+						<div class="single-img" style="height: 300px; overflow: hidden;">
+						<img src="portfolio/Clinic-1.0.0/assets/img/health/facilities-9.webp" alt="Clinic - Medical Center Official Website" style="width: 100%; height: 100%; object-fit: cover;">
+							<div class="opacity">
+								<div class="border-shape"><div><div>
+								<h6><a href="portfolio/Clinic-1.0.0/index.html" target="_blank" data-i18n="portfolio.clinic">Medical Clinic</a></h6>
+								<ul>
+									<li data-i18n="portfolio.healthcare">Healthcare</li>
+									<li data-i18n="portfolio.professional">Professional Site</li>
+									<li data-i18n="portfolio.appointment">Appointment System</li>
+									<li data-i18n="portfolio.responsive">Responsive Design</li>
+									</ul></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Business Website: Restaurant Master -->
+					<div class="mix grid-item official">
+						<div class="single-img" style="height: 300px; overflow: hidden;">
+						<img src="portfolio/Restaurant-master/images/featured.jpg" alt="Restaurant Master - Fine Dining Official Website" style="width: 100%; height: 100%; object-fit: cover;">
+							<div class="opacity">
+								<div class="border-shape"><div><div>
+								<h6><a href="portfolio/Restaurant-master/index.html" target="_blank" data-i18n="portfolio.restaurant">Restaurant Master</a></h6>
+								<ul>
+									<li data-i18n="portfolio.dining">Fine Dining</li>
+									<li data-i18n="portfolio.restaurant">Restaurant Brand</li>
+									<li data-i18n="portfolio.menu">Menu System</li>
+									<li data-i18n="portfolio.premium">Premium Design</li>
+									</ul></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- AI Tech Core Section -->
+		<div id="ai-section" style="padding: 120px 0; background: #050505; position: relative; overflow: hidden;">
+			<!-- 背景网格装饰 -->
+			<div style="position: absolute; inset: 0; opacity: 0.08; background-image: radial-gradient(#00D1FF 1px, transparent 1px); background-size: 40px 40px; pointer-events: none;"></div>
+			<!-- 扫描线动画 -->
+			<style>
+				@keyframes ai-scan-line {
+					0% { transform: translateY(-100%); }
+					100% { transform: translateY(500px); }
+				}
+				@keyframes code-pulse {
+					0%, 100% { opacity: 1; }
+					50% { opacity: 0.5; }
+				}
+				.ai-terminal::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background: linear-gradient(90deg, transparent, #00D1FF, transparent);
+					animation: ai-scan-line 3s linear infinite;
+				}
+				.code-pulse {
+					animation: code-pulse 2s infinite;
+				}
+				.tech-card-dark {
+					background: #0A192F;
+					border: 1px solid #112240;
+					transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+				}
+				.tech-card-dark:hover {
+					border-color: #00D1FF;
+					transform: translateY(-10px);
+					box-shadow: 0 10px 30px rgba(0, 209, 255, 0.1);
+				}
+			</style>
+			
+			<div class="container" style="position: relative; z-index: 10;">
+				<div class="row" style="display: flex; flex-wrap: wrap; align-items: center;">
+					<!-- 左侧：模拟代码终端 -->
+					<div class="col-lg-6 col-md-12" style="margin-bottom: 40px;">
+						<div class="ai-terminal" style="background: rgba(10, 37, 64, 0.4); border: 1px solid rgba(0, 209, 255, 0.2); font-family: 'Fira Code', monospace; position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 25px 50px rgba(0,0,0,0.5);">
+							<div style="background: rgba(30, 41, 59, 0.5); padding: 12px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+								<div style="width: 12px; height: 12px; border-radius: 50%; background: #EF4444;"></div>
+								<div style="width: 12px; height: 12px; border-radius: 50%; background: #F59E0B;"></div>
+								<div style="width: 12px; height: 12px; border-radius: 50%; background: #22C55E;"></div>
+								<span style="margin-left: 16px; font-size: 10px; color: #64748B; text-transform: uppercase; letter-spacing: 2px;">deployment_v2.log</span>
+							</div>
+							<div style="padding: 24px; height: 420px; overflow: hidden; font-size: 12px; line-height: 1.8; color: #93C5FD;">
+								<p style="color: #64748B; margin-bottom: 8px;">// Initializing Gooyoung AI Core...</p>
+								<p style="color: #4ADE80;">> [SUCCESS] AI Model Loaded: GPT-4o-Turbo</p>
+								<p style="color: #FFFFFF;">> Executing Design Autocode...</p>
+								<p style="color: #FBBF24; margin-top: 16px;">struct Project_Manifest {</p>
+								<p style="margin-left: 20px; color: #E2E8F0;">id: "GY-2024-X",</p>
+								<p style="margin-left: 20px; color: #E2E8F0;">services: ["AI-Design", "Cloud-Deploy"],</p>
+								<p style="margin-left: 20px; color: #E2E8F0;">status: "Optimizing_UI_Performance"</p>
+								<p style="color: #FBBF24;">}</p>
+								<p style="color: #FFFFFF; margin-top: 16px;">> Injecting CSS Grid System...</p>
+								<p style="color: #00D1FF;">> npm run deploy --prod</p>
+								<p style="color: #64748B; margin-top: 12px;">------------------------------------</p>
+								<p class="code-pulse" style="color: #22C55E; font-weight: 700;">● LIVE ON AWS CLOUD-FRONT</p>
+								<p style="color: #FFFFFF; margin-top: 8px;">> Lighthouse Score: 99/100</p>
+								<p style="color: #FFFFFF;">> SEO Metadata Generated...</p>
+								<p style="color: #4ADE80; margin-top: 12px;">> All systems operational ✓</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- 右侧：科技亮点说明 -->
+					<div class="col-lg-6 col-md-12">
+						<div style="padding-left: 40px;">
+							<span style="display: block; font-size: 12px; font-weight: 900; letter-spacing: 0.5em; color: #E63946; text-transform: uppercase; margin-bottom: 16px;" data-i18n="ai.label">// TECHNOLOGY PIVOT</span>
+							<h2 style="font-size: 42px; font-weight: 900; color: #FFFFFF; line-height: 1.2; margin-bottom: 40px;" data-i18n="ai.title" data-i18n-html="true">从像素到部署，<br>全流程 <span style="color: #00D1FF;">AI 自动化</span></h2>
+							
+							<div style="display: flex; flex-direction: column; gap: 24px;">
+								<!-- 设计卡片 -->
+								<div class="tech-card-dark" style="padding: 24px; display: flex; gap: 20px; border-radius: 4px;">
+									<div style="color: #00D1FF; font-size: 28px; flex-shrink: 0;"><i class="fa fa-wand-magic-sparkles"></i></div>
+									<div>
+										<h5 style="font-size: 16px; font-weight: 900; color: #FFFFFF; margin-bottom: 8px; text-transform: uppercase;" data-i18n="ai.design.title">AI 智能设计</h5>
+										<p style="font-size: 13px; color: #94A3B8; line-height: 1.7;" data-i18n="ai.design.description">基于海量商业数据训练，AI 协助生成最符合用户转化逻辑的 UI/UX 方案，让设计不仅仅是美观，更是生产力。</p>
+									</div>
+								</div>
+
+								<!-- 代码卡片 -->
+								<div class="tech-card-dark" style="padding: 24px; display: flex; gap: 20px; border-radius: 4px;">
+									<div style="color: #E63946; font-size: 28px; flex-shrink: 0;"><i class="fa fa-code"></i></div>
+									<div>
+										<h5 style="font-size: 16px; font-weight: 900; color: #FFFFFF; margin-bottom: 8px; text-transform: uppercase;" data-i18n="ai.code.title">AI 生成式代码</h5>
+										<p style="font-size: 13px; color: #94A3B8; line-height: 1.7;" data-i18n="ai.code.description">使用最新的 LLM 协助开发，极大降低人工错误并提升交付速度，让我们能在 1-2 周内上线复杂系统。</p>
+									</div>
+								</div>
+
+								<!-- 部署卡片 -->
+								<div class="tech-card-dark" style="padding: 24px; display: flex; gap: 20px; border-radius: 4px;">
+									<div style="color: #22C55E; font-size: 28px; flex-shrink: 0;"><i class="fa fa-cloud-arrow-up"></i></div>
+									<div>
+										<h5 style="font-size: 16px; font-weight: 900; color: #FFFFFF; margin-bottom: 8px; text-transform: uppercase;" data-i18n="ai.deploy.title">云端自动部署</h5>
+										<p style="font-size: 13px; color: #94A3B8; line-height: 1.7;" data-i18n="ai.deploy.description">集成 CI/CD 自动化流水线，每行代码变更都经过 AI 安全审查并瞬间同步至全球 CDN，确保 99.9% 稳定性。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="grants-section" style="padding: 100px 0; background: #F8FAFC; position: relative;">
+			<div class="container">
+				<div class="theme-title" style="margin-bottom: 60px;">
+					<span style="display: block; font-size: 12px; font-weight: 900; letter-spacing: 0.5em; color: #E63946; text-transform: uppercase; margin-bottom: 16px;" data-i18n="grants.label">// SME GRANTS CANADA</span>
+					<h2 data-i18n="grants.title">让政府为您的技术升级买单</h2>
+					<p data-i18n="grants.description">协助加拿大中小企业对接 CDAP 与 DMS 官方补助，最高获取 $2,500 现金补贴，覆盖 100% 开发费用。</p>
+				</div>
+
+				<div class="row">
+					<!-- DMS 计划 -->
+					<div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 30px;">
+						<div style="background: white; border: 1px solid #E2E8F0; border-top: 4px solid #00D1FF; padding: 40px; height: 100%; transition: all 0.3s;" onmouseover="this.style.borderColor='#00D1FF'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)';" onmouseout="this.style.borderColor='#E2E8F0'; this.style.boxShadow='none';">
+							<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px; flex-wrap: wrap; gap: 15px;">
+								<div>
+									<h4 style="font-size: 22px; font-weight: 900; color: #0A2540; margin-bottom: 5px;" data-i18n="grants.dms.title">DMS 数字化转型补贴</h4>
+									<p style="font-size: 11px; color: #00D1FF; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;" data-i18n="grants.dms.subtitle">Digital Main Street - Ontario</p>
+								</div>
+								<div style="text-align: right;">
+									<span style="font-size: 32px; font-weight: 900; color: #E63946;">$2,500</span>
+									<span style="display: block; font-size: 10px; color: #94A3B8; font-weight: 700; text-transform: uppercase;" data-i18n="grants.amount">Grant Amount</span>
+								</div>
+							</div>
+							
+							<div style="margin-bottom: 25px;">
+								<span style="font-size: 10px; font-weight: 900; color: #E63946; display: block; margin-bottom: 12px;" data-i18n="grants.requirements">申请门槛 / REQUIREMENTS</span>
+								<ul style="list-style: none; padding: 0; margin: 0;">
+									<li style="font-size: 14px; color: #64748B; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa fa-circle-check" style="color: #22C55E; margin-top: 3px;"></i> <span data-i18n="grants.dms.req1">实体店面位于安省或特定商业促进区 (BIA)</span></li>
+									<li style="font-size: 14px; color: #64748B; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa fa-circle-check" style="color: #22C55E; margin-top: 3px;"></i> <span data-i18n="grants.dms.req2">拥有 1-50 名正式员工</span></li>
+									<li style="font-size: 14px; color: #64748B; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa fa-circle-check" style="color: #22C55E; margin-top: 3px;"></i> <span data-i18n="grants.dms.req3">在加拿大注册的营利性企业</span></li>
+									<li style="font-size: 14px; color: #64748B; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa fa-circle-check" style="color: #22C55E; margin-top: 3px;"></i> <span data-i18n="grants.dms.req4">过去未曾获得过同类 DMS 补助</span></li>
+								</ul>
+							</div>
+							
+							<div>
+								<span style="font-size: 10px; font-weight: 900; color: #E63946; display: block; margin-bottom: 12px;" data-i18n="grants.eligible">资金用途 / ELIGIBLE COSTS</span>
+								<p style="font-size: 14px; color: #64748B; line-height: 1.7;" data-i18n="grants.dms.usage">完美覆盖品牌官网改版、电商平台搭建、Google 广告投放、社交媒体管理等直接提升销售额的项目。</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- CDAP Stream 1 -->
+					<div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 30px;">
+						<div style="background: white; border: 1px solid #E2E8F0; border-top: 4px solid #0A2540; padding: 40px; height: 100%; transition: all 0.3s;" onmouseover="this.style.borderColor='#0A2540'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)';" onmouseout="this.style.borderColor='#E2E8F0'; this.style.boxShadow='none';">
+							<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px; flex-wrap: wrap; gap: 15px;">
+								<div>
+									<h4 style="font-size: 22px; font-weight: 900; color: #0A2540; margin-bottom: 5px;" data-i18n="grants.cdap.title">CDAP 电商增长计划</h4>
+									<p style="font-size: 11px; color: #0A2540; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;" data-i18n="grants.cdap.subtitle">Grow Your Business Online</p>
+								</div>
+								<div style="text-align: right;">
+									<span style="font-size: 32px; font-weight: 900; color: #E63946;">$2,400</span>
+									<span style="display: block; font-size: 10px; color: #94A3B8; font-weight: 700; text-transform: uppercase;" data-i18n="grants.amount">Grant Amount</span>
+								</div>
+							</div>
+							
+							<div style="margin-bottom: 25px;">
+								<span style="font-size: 10px; font-weight: 900; color: #E63946; display: block; margin-bottom: 12px;" data-i18n="grants.requirements">申请门槛 / REQUIREMENTS</span>
+								<ul style="list-style: none; padding: 0; margin: 0;">
+									<li style="font-size: 14px; color: #64748B; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa fa-circle-check" style="color: #22C55E; margin-top: 3px;"></i> <span data-i18n="grants.cdap.req1">面向消费者 (B2C) 的营利性企业</span></li>
+									<li style="font-size: 14px; color: #64748B; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa fa-circle-check" style="color: #22C55E; margin-top: 3px;"></i> <span data-i18n="grants.cdap.req2">至少拥有一名员工（有 T4 Payroll）</span></li>
+									<li style="font-size: 14px; color: #64748B; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa fa-circle-check" style="color: #22C55E; margin-top: 3px;"></i> <span data-i18n="grants.cdap.req3">或过去一个财年年收入不低于 $30,000</span></li>
+									<li style="font-size: 14px; color: #64748B; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa fa-circle-check" style="color: #22C55E; margin-top: 3px;"></i> <span data-i18n="grants.cdap.req4">注册公司或注册个体户 (Sole Proprietorship)</span></li>
+								</ul>
+							</div>
+							
+							<div>
+								<span style="font-size: 10px; font-weight: 900; color: #E63946; display: block; margin-bottom: 12px;" data-i18n="grants.service">我们的服务 / OUR ROLE</span>
+								<p style="font-size: 14px; color: #64748B; line-height: 1.7;" data-i18n="grants.cdap.usage">作为技术提供商，我们协助您完成数字化评估，并直接承接电商建站、在线预订、支付网关集成等技术实施工作。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 高阶方案 CTA -->
+				<div style="margin-top: 40px; background: white; padding: 40px; border: 1px solid #E2E8F0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 30px;">
+					<div style="flex: 1; min-width: 280px;">
+						<h5 style="font-size: 20px; font-weight: 900; color: #0A2540; margin-bottom: 10px;" data-i18n="grants.advanced.title">需要更高额度的资金？</h5>
+						<p style="font-size: 14px; color: #94A3B8; max-width: 600px;" data-i18n="grants.advanced.description">针对年收入过 $500,000 的高增长型企业，我们可引荐合作的官方数字化顾问协助申请 $15,000 咨询费补贴及 $100,000 无息贷款 (CDAP Stream 2)。</p>
+					</div>
+					<a href="#contact-section" style="border: 2px solid #0A2540; color: #0A2540; padding: 14px 30px; font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; transition: all 0.3s; white-space: nowrap;" onmouseover="this.style.background='#0A2540'; this.style.color='white';" onmouseout="this.style.background='transparent'; this.style.color='#0A2540';" data-i18n="grants.advanced.cta">咨询高阶方案</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Section - Modern Instant Contact -->
+		<style>
+			#contact-section {
+				padding: 80px 0;
+				background: #050505;
+				color: white;
+				overflow: hidden;
+				position: relative;
+			}
+			#contact-section .contact-method {
+				background: rgba(255, 255, 255, 0.03);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				cursor: pointer;
+				height: 100%;
+				padding: 24px;
+				border-radius: 4px;
+				text-align: center;
+			}
+			#contact-section .contact-method:hover {
+				background: white;
+				color: black !important;
+				transform: translateY(-5px);
+				border-color: #00D1FF;
+			}
+			#contact-section .contact-method:hover i,
+			#contact-section .contact-method:hover span,
+			#contact-section .contact-method:hover a {
+				color: black !important;
+			}
+			#contact-section .contact-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 16px;
+			}
+			#contact-section .trust-panel {
+				background: #0A192F;
+				border-radius: 8px;
+				border: 1px solid rgba(255,255,255,0.05);
+				padding: 48px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				min-height: 400px;
+				position: relative;
+			}
+			#contact-section .trust-panel::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				opacity: 0.1;
+				background-image: radial-gradient(#00D1FF 1px, transparent 1px);
+				background-size: 25px 25px;
+			}
+			#contact-section .location-icon {
+				width: 48px;
+				height: 48px;
+				background: #E63946;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 24px;
+				box-shadow: 0 0 20px rgba(230,57,70,0.4);
+			}
+			.modal-overlay {
+				display: none;
+				position: fixed;
+				inset: 0;
+				background: rgba(0,0,0,0.95);
+				z-index: 2000;
+				align-items: center;
+				justify-content: center;
+				backdrop-filter: blur(15px);
+			}
+			.qr-card {
+				background: #111;
+				padding: 40px;
+				border: 1px solid rgba(255,255,255,0.1);
+				text-align: center;
+				max-width: 380px;
+				width: 90%;
+				color: white;
+				border-radius: 8px;
+			}
+			.direct-link-btn {
+				background: #00D1FF;
+				color: black;
+				padding: 10px 20px;
+				font-weight: 900;
+				font-size: 10px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				margin-top: 15px;
+				display: inline-block;
+				transition: all 0.3s;
+				text-decoration: none;
+			}
+			.direct-link-btn:hover {
+				filter: brightness(1.2);
+				transform: scale(1.05);
+			}
+			@media (max-width: 991px) {
+				#contact-section .contact-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+			@media (max-width: 575px) {
+				#contact-section .contact-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+
+		<div id="contact-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<h6 style="color: #E63946; font-weight: bold; letter-spacing: 0.5em; font-size: 11px; text-transform: uppercase; margin-bottom: 16px;" data-i18n="contact.label">// INSTANT CONTACT</h6>
+						<h2 style="font-size: 36px; font-weight: 900; margin-bottom: 32px; line-height: 1.2;" data-i18n="contact.title">No Office Limits,<br><span style="color: #00D1FF;" data-i18n="contact.titleHighlight">Ontario-Wide Service</span></h2>
+						<p style="color: #D1D5DB; margin-bottom: 40px; font-size: 16px; line-height: 1.8;" data-i18n="contact.description">We operate on a 100% remote collaboration model, significantly reducing operational costs and offering more competitive pricing. Click to scan QR or tap link to chat directly:</p>
+						
+						<div class="contact-grid">
+							<!-- WeChat -->
+							<div onclick="openContactModal('wechat')" class="contact-method">
+								<i class="fa fa-comments" style="font-size: 28px; margin-bottom: 12px; color: #22C55E;"></i>
+								<span style="font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 4px; color: white;">WeChat</span>
+								<span style="font-size: 12px; color: #9CA3AF; font-family: monospace;">ID: Gooyoung_Dev</span>
+							</div>
+
+							<!-- WhatsApp -->
+							<div onclick="openContactModal('whatsapp')" class="contact-method">
+								<i class="fa fa-whatsapp" style="font-size: 28px; margin-bottom: 12px; color: #4ADE80;"></i>
+								<span style="font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 4px; color: white;">WhatsApp</span>
+								<span style="font-size: 12px; color: #9CA3AF; font-family: monospace;">+1 (647) 000-0000</span>
+							</div>
+
+							<!-- Messenger -->
+							<div onclick="openContactModal('messenger')" class="contact-method">
+								<i class="fa fa-facebook" style="font-size: 28px; margin-bottom: 12px; color: #3B82F6;"></i>
+								<span style="font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 4px; color: white;">Messenger</span>
+								<span style="font-size: 12px; color: #9CA3AF; font-family: monospace;">@GooyoungDigital</span>
+							</div>
+
+							<!-- Direct Call -->
+							<a href="tel:+16470000000" class="contact-method" style="border-left: 2px solid #E63946; text-decoration: none;">
+								<i class="fa fa-phone" style="font-size: 28px; margin-bottom: 12px; color: #E63946;"></i>
+								<span style="font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 4px; color: white;">Direct Call</span>
+								<span style="font-size: 12px; color: #9CA3AF; font-family: monospace;">+1 (647) 000-0000</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- Right Side: Trust Panel -->
+					<div class="col-lg-6 col-md-12" style="margin-top: 40px;">
+						<div class="trust-panel">
+							<div style="position: relative; z-index: 10;">
+								<div class="location-icon">
+									<i class="fa fa-map-marker" style="font-size: 18px; color: white;"></i>
+								</div>
+								<h4 style="font-size: 24px; font-weight: 900; margin-bottom: 16px; text-transform: uppercase; letter-spacing: -0.02em;" data-i18n="contact.locationTitle">Ontario Wide</h4>
+								<p style="color: #D1D5DB; font-size: 14px; line-height: 1.8; margin-bottom: 32px;" data-i18n="contact.locationDesc">Based in Toronto, serving all of Ontario. Supporting online Zoom/Meet or in-person meetings within GTA.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact QR Modal -->
+		<div id="contact-modal-overlay" class="modal-overlay" onclick="closeContactModal()">
+			<!-- WeChat Card -->
+			<div id="wechat-card" class="qr-card" style="display: none;" onclick="event.stopPropagation()">
+				<h4 style="font-size: 20px; font-weight: bold; margin-bottom: 8px;">WeChat Connect</h4>
+				<p style="color: #9CA3AF; font-size: 10px; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 0.3em;">ID: Gooyoung_Dev</p>
+				<div style="background: white; padding: 16px; display: inline-block; border-radius: 4px; margin-bottom: 24px;">
+					<img src="images/qr/wechat-qr.png" alt="WeChat QR" style="width: 224px; height: 224px;">
+				</div>
+				<p style="font-size: 10px; color: #D1D5DB;" data-i18n="contact.qrScan">Scan QR or search ID to add friend</p>
+				<button onclick="closeContactModal()" style="margin-top: 32px; font-size: 10px; text-transform: uppercase; font-weight: bold; color: #9CA3AF; background: none; border: none; cursor: pointer; text-decoration: underline;">Close [ESC]</button>
+			</div>
+
+			<!-- WhatsApp Card -->
+			<div id="whatsapp-card" class="qr-card" style="display: none;" onclick="event.stopPropagation()">
+				<h4 style="font-size: 20px; font-weight: bold; margin-bottom: 8px;">WhatsApp</h4>
+				<div style="background: white; padding: 16px; display: inline-block; border-radius: 4px; margin-bottom: 16px;">
+					<img src="images/qr/whatsapp-qr.png" alt="WhatsApp QR" style="width: 224px; height: 224px;">
+				</div>
+				<div>
+					<a href="https://wa.me/16470000000" target="_blank" class="direct-link-btn" data-i18n="contact.openChat">Open Chat Directly</a>
+				</div>
+				<button onclick="closeContactModal()" style="margin-top: 32px; font-size: 10px; text-transform: uppercase; font-weight: bold; color: #9CA3AF; background: none; border: none; cursor: pointer; text-decoration: underline;">Close [ESC]</button>
+			</div>
+
+			<!-- Messenger Card -->
+			<div id="messenger-card" class="qr-card" style="display: none;" onclick="event.stopPropagation()">
+				<h4 style="font-size: 20px; font-weight: bold; margin-bottom: 8px;">Messenger</h4>
+				<div style="background: white; padding: 16px; display: inline-block; border-radius: 4px; margin-bottom: 16px;">
+					<img src="images/qr/messenger-qr.png" alt="Messenger QR" style="width: 224px; height: 224px;">
+				</div>
+				<div>
+					<a href="https://m.me/GooyoungDigital" target="_blank" class="direct-link-btn" data-i18n="contact.openApp">Open in App</a>
+				</div>
+				<button onclick="closeContactModal()" style="margin-top: 32px; font-size: 10px; text-transform: uppercase; font-weight: bold; color: #9CA3AF; background: none; border: none; cursor: pointer; text-decoration: underline;">Close [ESC]</button>
+			</div>
+		</div>
+
+		<script>
+			function openContactModal(type) {
+				document.getElementById('contact-modal-overlay').style.display = 'flex';
+				document.getElementById('wechat-card').style.display = 'none';
+				document.getElementById('whatsapp-card').style.display = 'none';
+				document.getElementById('messenger-card').style.display = 'none';
+				document.getElementById(type + '-card').style.display = 'block';
+			}
+
+			function closeContactModal() {
+				document.getElementById('contact-modal-overlay').style.display = 'none';
+			}
+
+			document.addEventListener('keydown', function(e) {
+				if (e.key === 'Escape') closeContactModal();
+			});
+		</script>
+
+		<!-- Footer Logo Section -->
+		<div style="background: #050505; padding: 60px 0 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
+			<div class="container">
+				<a href="index.html">
+					<img src="images/logo/logo.svg" alt="Gooyoung Logo" style="width: 180px; height: auto;">
+				</a>
+				<p style="color: #9CA3AF; font-size: 11px; margin-top: 24px; letter-spacing: 0.3em; text-transform: uppercase;">© 2026 Gooyoung Digital // Serving Ontario, Canada</p>
+			</div>
+		</div>
+
+		<button class="scroll-top tran3s p-color-bg">
+			<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+		</button>
+
+		<script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
+		<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="vendor/revolution/jquery.themepunch.tools.min.js"></script>
+		<script src="vendor/revolution/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.video.min.js"></script>
+		<script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="vendor/jquery.mixitup.min.js"></script>
+		<script type="text/javascript" src="vendor/skills-master/jquery.skills.js"></script>
+		<script type="text/javascript" src="vendor/contact-form/validate.js"></script>
+		<script type="text/javascript" src="vendor/contact-form/jquery.form.js"></script>
+		<script type="text/javascript" src="js/theme.js"></script>
+		<script type="text/javascript" src="js/i18n.js"></script>
+		<script>
+			const swiper = new Swiper('.swiper', {
+				direction: 'horizontal',
+				loop: true,
+				effect: 'fade',
+				fadeEffect: { crossFade: true },
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+	</div>
+</body>
+</html>

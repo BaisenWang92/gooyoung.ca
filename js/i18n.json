@@ -1,0 +1,226 @@
+{
+  "en": {
+    "nav": {
+      "home": "HOME",
+      "about": "ABOUT",
+      "services": "SERVICES",
+      "portfolio": "PORTFOLIO",
+      "team": "TEAM",
+      "skills": "SKILLS",
+      "clients": "CLIENTS",
+      "pricing": "PRICING",
+      "blog": "BLOG",
+      "contact": "CONTACT",
+      "blogDetails": "Blog Details"
+    },
+    "hero": {
+      "title": "WELCOME TO GOOYOUNG",
+      "subtitle": "Professional Web Development Solutions",
+      "cta": "View Our Work"
+    },
+    "about": {
+      "title": "ABOUT GOOYOUNG",
+      "description": "Gooyoung is a leading web development company dedicated to creating outstanding digital solutions. We specialize in modern web technologies and innovative design approaches.",
+      "service1": "Web Development",
+      "service1Desc": "We create responsive and dynamic web applications using the latest technologies and best practices.",
+      "service2": "UI/UX Design",
+      "service2Desc": "Our design team crafts beautiful and intuitive user interfaces that engage and delight users.",
+      "service3": "Mobile Solutions",
+      "service3Desc": "We develop mobile-first applications that work seamlessly across all devices and platforms.",
+      "service4": "Web Consulting",
+      "service4Desc": "Our experts provide strategic consulting to help your business achieve digital transformation."
+    },
+    "services": {
+      "title_label": "CORE SERVICES",
+      "title": "SERVICES",
+      "description": "Our Service Matrix",
+      "service1": {
+        "title": "Brand Website Development",
+        "description": "Custom-built exclusively for North American enterprises. We optimize for lightning-fast load speeds and SEO-friendly architecture, crafting a comprehensive brand presence that captures your audience from the first click."
+      },
+      "service2": {
+        "title": "Full-Featured E-Commerce Platform",
+        "description": "Deep integration with payment gateways and inventory management systems. Built to handle high concurrent traffic with a smooth mobile-first experience that converts every visitor into a paying customer."
+      },
+      "service3": {
+        "title": "Government Subsidy Technical Support",
+        "description": "Expert interpretation of CDAP, DMS and other digital transformation government subsidies. We deliver compliant technical implementation and guide your enterprise to maximize funding eligibility and amounts."
+      },
+      "service4": {
+        "title": "AI-Powered Interaction Integration",
+        "description": "Deploy generative AI-driven intelligent customer service and automated workflows. Our large language models optimize efficiency and enable 24/7 unmanned business response capabilities."
+      },
+      "service5": {
+        "title": "North American Growth Blueprint",
+        "description": "Precision SEO optimization aligned with local search behavior. We help your brand stand out on Google and social platforms, capturing high-quality local leads and driving sustainable growth."
+      },
+      "service6": {
+        "title": "Enterprise-Grade Cloud Maintenance",
+        "description": "Bank-level data security and 24/7 monitoring services. Your digital assets remain fortified against any potential threat, maintaining peak stability under heavy load and emerging vulnerabilities."
+      },
+      "cta": "Customize Your Digital Blueprint"
+    },
+    "contact": {
+      "title": "GET IN TOUCH",
+      "description": "Have a project in mind? Let's discuss how Gooyoung can help bring your ideas to life.",
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "projects": {
+      "title": "OUR AWESOME PROJECTS",
+      "description": "A selection of portfolio projects showcasing our expertise in e-commerce platforms, business websites, and digital solutions across various industries.",
+      "all": "All Projects",
+      "ecommerce": "E-Commerce Platforms",
+      "business": "Business Websites"
+    },
+    "portfolio": {
+      "electro": "Electro Store",
+      "kaira": "Kaira Fashion",
+      "cozastore": "Cozastore",
+      "furni": "Furni",
+      "feane": "Feane Restaurant",
+      "organic": "Organic Store",
+      "clinic": "Medical Clinic",
+      "restaurant": "Restaurant Master",
+      "ecommerce": "E-Commerce",
+      "electronics": "Electronics",
+      "bootstrap": "Bootstrap",
+      "responsive": "Responsive Design",
+      "fashion": "Fashion",
+      "bootstrap5": "Bootstrap 5",
+      "modern": "Modern Design",
+      "shopping": "Shopping Cart",
+      "ui": "Modern UI",
+      "furniture": "Furniture",
+      "catalog": "Product Catalog",
+      "checkout": "Checkout System",
+      "food": "Food & Beverage",
+      "restaurant": "Restaurant",
+      "fullstack": "Full Stack",
+      "natural": "Natural Products",
+      "brand": "Brand Website",
+      "clean": "Clean Design",
+      "ecofriendly": "Eco-Friendly",
+      "healthcare": "Healthcare",
+      "professional": "Professional Site",
+      "appointment": "Appointment System",
+      "dining": "Fine Dining",
+      "menu": "Menu System",
+      "premium": "Premium Design"
+    }
+  },
+  "zh": {
+    "nav": {
+      "home": "首页",
+      "about": "关于我们",
+      "services": "服务",
+      "portfolio": "作品集",
+      "team": "团队",
+      "skills": "技能",
+      "clients": "客户",
+      "pricing": "定价",
+      "blog": "博客",
+      "contact": "联系",
+      "blogDetails": "博客详情"
+    },
+    "hero": {
+      "title": "欢迎来到古鹰网络",
+      "subtitle": "专业的网站开发解决方案",
+      "cta": "查看我们的作品"
+    },
+    "about": {
+      "title": "关于古鹰网络",
+      "description": "古鹰网络是一家领先的网站开发公司，致力于创建卓越的数字解决方案。我们专注于现代网络技术和创新的设计方法。",
+      "service1": "网站开发",
+      "service1Desc": "我们使用最新的技术和最佳实践创建响应式和动态的网络应用。",
+      "service2": "UI/UX设计",
+      "service2Desc": "我们的设计团队创意美观和直观的用户界面，让用户享受愉悦的体验。",
+      "service3": "移动解决方案",
+      "service3Desc": "我们开发移动优先的应用程序，在所有设备和平台上无缝运行。",
+      "service4": "网络咨询",
+      "service4Desc": "我们的专家提供战略咨询，帮助您的业务实现数字化转型。"
+    },
+    "services": {
+      "title_label": "核心服务",
+     ,
+    "portfolio": {
+      "electro": "电子产品商城",
+      "kaira": "凯拉时尚",
+      "cozastore": "科兹商城",
+      "furni": "家具商城",
+      "feane": "菲恩餐厅",
+      "organic": "有机食品店",
+      "clinic": "医疗诊所",
+      "restaurant": "高级餐厅",
+      "ecommerce": "电子商务",
+      "electronics": "电子产品",
+      "bootstrap": "Bootstrap",
+      "responsive": "响应式设计",
+      "fashion": "时尚",
+      "bootstrap5": "Bootstrap 5",
+      "modern": "现代设计",
+      "shopping": "购物车系统",
+      "ui": "现代界面",
+      "furniture": "家具",
+      "catalog": "产品目录",
+      "checkout": "结账系统",
+      "food": "食品饮料",
+      "restaurant": "餐厅",
+      "fullstack": "全栈开发",
+      "natural": "天然产品",
+      "brand": "品牌网站",
+      "clean": "简洁设计",
+      "ecofriendly": "环保友好",
+      "healthcare": "医疗保健",
+      "professional": "专业网站",
+      "appointment": "预约系统",
+      "dining": "高级餐饮",
+      "menu": "菜单系统",
+      "premium": "高端设计"
+    } "title": "服务",
+      "description": "我们的服务矩阵",
+      "service1": {
+        "title": "品牌官方网站开发",
+        "description": "专为北美本地企业定制，兼顾极致的加载速度与 SEO 友好型架构。全方位塑造您的品牌线上第一印象。"
+      },
+      "service2": {
+        "title": "全功能网络商城",
+        "description": "深度整合支付网关与库存管理系统。支持高并发访问，提供流畅移动体验，将流量精准转化为订单。"
+      },
+      "service3": {
+        "title": "政府补贴技术支持",
+        "description": "专业解读 CDAP、DMS 等数字化政府补贴政策。提供合规技术实施方案，协助企业获取最高额度资金。"
+      },
+      "service4": {
+        "title": "AI 智能交互集成",
+        "description": "接入生成式 AI 智能客服与自动化工作流。通过大模型优化服务效率，实现 24/7 无人值守业务响应。"
+      },
+      "service5": {
+        "title": "北美市场增长方案",
+        "description": "结合本地搜索习惯的精准 SEO 优化。我们协助您在 Google 与社交媒体中脱颖而出，获取本地高质量客源。"
+      },
+      "service6": {
+        "title": "企业级云端维护",
+        "description": "提供银行级数据安全防护与全天候监控。确保您的数字资产在任何潜在威胁下依然稳如磐石。"
+      },
+      "cta": "定制您的数字蓝图"
+    },
+    "contact": {
+      "title": "联系我们",
+      "description": "有项目想法？让我们讨论古鹰网络如何帮助您将想法变成现实。",
+      "name": "您的名字",
+      "email": "您的邮箱",
+      "message": "您的信息",
+      "send": "发送信息"
+    },
+    "projects": {
+      "title": "我们的精品项目",
+      "description": "精选的作品集项目，展示我们在电子商务平台、企业网站和各行业数字解决方案方面的专业能力。",
+      "all": "全部项目",
+      "ecommerce": "电商平台",
+      "business": "企业网站"
+    },
+  }
+}

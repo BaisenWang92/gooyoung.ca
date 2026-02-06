@@ -1,0 +1,720 @@
+:root {
+    --neon-blue: #00D1FF;
+    --neon-red: #E63946;
+    --tech-bg: #050505;
+}
+
+/* 扫描线效果 */
+.scanline {
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 209, 255, 0.05);
+    position: fixed;
+    top: 0;
+    animation: scan 8s linear infinite;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+@keyframes scan {
+    0% { top: 0%; }
+    100% { top: 100%; }
+}
+
+/* Hero Banner 容器 */
+.hero-banner {
+    background: var(--tech-bg);
+    min-height: 100vh;
+    position: relative;
+}
+
+.scanline-banner {
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 209, 255, 0.05);
+    position: absolute;
+    top: 0;
+    animation: scan 8s linear infinite;
+    pointer-events: none;
+    z-index: 99;
+}
+
+/* Swiper 样式 */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: var(--tech-bg);
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.slide-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 26, 44, 0.8) 0%, #050505 100%);
+    z-index: 1;
+}
+
+/* 第一个 slide - 蓝色 (AI主题) */
+.swiper-slide[data-slide="1"] .slide-bg-overlay {
+    background: radial-gradient(circle at center, rgba(0, 100, 255, 0.15) 0%, #050505 100%);
+}
+
+/* 第二个 slide - 红色 (政策补贴主题) */
+.swiper-slide[data-slide="2"] .slide-bg-overlay {
+    background: radial-gradient(circle at center, rgba(230, 57, 70, 0.15) 0%, #050505 100%);
+}
+
+/* 第三个 slide - 青色 (托管服务主题) */
+.swiper-slide[data-slide="3"] .slide-bg-overlay {
+    background: radial-gradient(circle at center, rgba(0, 217, 255, 0.15) 0%, #050505 100%);
+}
+
+.slide-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Badge 样式 */
+.badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 209, 255, 0.3);
+    color: var(--neon-blue);
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.badge i {
+    margin-right: 8px;
+}
+
+.badge-red {
+    border-color: rgba(230, 57, 70, 0.3);
+    color: var(--neon-red);
+}
+
+/* Hero Title */
+.hero-title {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    text-shadow: 0 0 30px rgba(0, 209, 255, 0.4);
+    font-family: 'Fira Code', monospace;
+    color: #ffffff;
+}
+
+.subtitle-text {
+    color: #f0f0f0;
+    font-weight: 300;
+    display: block;
+}
+
+.subtitle-cyan {
+    color: var(--neon-blue);
+    display: block;
+}
+
+/* Hero Description */
+.hero-description {
+    color: #aaa;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* CTA Button */
+.cta-button {
+    border: 1px solid var(--neon-blue);
+    background: transparent;
+    color: var(--neon-blue);
+    padding: 14px 35px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.cta-button:hover {
+    background: var(--neon-blue);
+    color: #000;
+    box-shadow: 0 0 30px var(--neon-blue);
+}
+
+/* 动画 */
+.ai-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.5; }
+}
+
+/* Swiper 分页器 */
+.swiper-pagination {
+    bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background: radial-gradient(circle, #fff 15%, #FFA500 70%);
+    opacity: 1;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(255, 165, 0, 0.5);
+    position: relative;
+}
+
+/* 太阳光晕效果 */
+.swiper-pagination-bullet::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 50%;
+    background: rgba(255, 165, 0, 0.3);
+    filter: blur(6px);
+    z-index: -1;
+    animation: sun-glow 2s infinite ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+    width: 24px;
+    height: 24px;
+    background: radial-gradient(circle, #fff 15%, #FFA500 70%);
+    transform: scale(1.5);
+    box-shadow: 0 0 25px rgba(255, 165, 0, 1), 0 0 45px rgba(255, 165, 0, 0.6);
+}
+
+.swiper-pagination-bullet-active::after {
+    animation: sun-glow-active 2s infinite ease-in-out;
+}
+
+/* 移除之前的 nth-child 样式 */
+.swiper-pagination-bullet:nth-child(1),
+.swiper-pagination-bullet:nth-child(2),
+.swiper-pagination-bullet:nth-child(3) {
+    background: radial-gradient(circle, #fff 15%, #FFA500 70%);
+    box-shadow: 0 0 12px rgba(255, 165, 0, 0.5);
+}
+
+.swiper-pagination-bullet-active:nth-child(1),
+.swiper-pagination-bullet-active:nth-child(2),
+.swiper-pagination-bullet-active:nth-child(3) {
+    box-shadow: 0 0 25px rgba(255, 165, 0, 1), 0 0 45px rgba(255, 165, 0, 0.6);
+}
+
+/* 光晕呼吸动画 */
+@keyframes sun-glow {
+    0%, 100% { transform: scale(1); opacity: 0.4; }
+    50% { transform: scale(1.3); opacity: 0.7; }
+}
+
+@keyframes sun-glow-active {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.5); opacity: 1; }
+}
+
+/* Swiper 导航按钮 */
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 209, 255, 0.1);
+    color: var(--neon-blue);
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(0, 209, 255, 0.3);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 24px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .swiper-slide {
+        min-height: 100vh;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .cta-button {
+        padding: 10px 25px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .badge {
+        font-size: 8px;
+        padding: 6px 12px;
+        margin-bottom: 20px;
+    }
+
+    .slide-content {
+        padding: 30px 15px;
+    }
+
+    .hero-description {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+}
+
+/* 修复 Swiper 与现有代码的兼容性 */
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== ABOUT US SECTION ===== */
+#about-us {
+    position: relative;
+    background: #ffffff;
+    padding: 160px 0;
+    overflow: hidden;
+}
+
+.tech-grid {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 2px 2px, rgba(10, 37, 64, 0.05) 1px, transparent 0);
+    background-size: 40px 40px;
+}
+
+#about-us .scan-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--neon-blue), transparent);
+    animation: scan 8s linear infinite;
+    opacity: 0.3;
+    z-index: 5;
+}
+
+.section-title-bg {
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    top: -50px;
+    left: -20px;
+    font-size: 12rem;
+    font-weight: 900;
+    color: rgba(10, 37, 64, 0.02);
+    line-height: 1;
+    z-index: 0;
+    letter-spacing: -3px;
+}
+
+/* 玻璃面板卡片 */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(10, 37, 64, 0.05);
+    border-left: 4px solid #0A2540;
+    padding: 32px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 10;
+}
+
+.glass-card:hover {
+    transform: translateX(10px);
+    border-left-color: var(--neon-blue);
+    box-shadow: 0 10px 40px rgba(0, 209, 255, 0.1);
+}
+
+.glass-card .group-number {
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgba(10, 37, 64, 0.1);
+    font-family: 'Space Mono', monospace;
+    transition: color 0.3s ease;
+}
+
+.glass-card:hover .group-number {
+    color: rgba(0, 209, 255, 0.2);
+}
+
+.glass-card h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0A2540;
+    margin-bottom: 24px;
+}
+
+.glass-card p {
+    color: #444;
+    line-height: 2;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* 指标卡片 */
+.metric-card {
+    padding: 40px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.metric-card.dark {
+    background: #0A2540;
+    color: white;
+}
+
+.metric-card.blue {
+    background: var(--neon-blue);
+    color: #0A2540;
+}
+
+.metric-card.light {
+    background: #F8FAFC;
+    color: #0A2540;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.metric-number {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 12px;
+    font-family: 'Space Mono', monospace;
+    line-height: 1;
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.9;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+/* 左侧内容 */
+#about-us .about-left {
+    position: relative;
+    z-index: 10;
+    padding-right: 30px;
+}
+
+.about-badge {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.about-badge-line {
+    width: 32px;
+    height: 2px;
+    background: var(--neon-red);
+}
+
+.about-badge-text {
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--neon-red);
+}
+
+#about-us h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #0A2540;
+    line-height: 1.15;
+    letter-spacing: -2px;
+    margin-bottom: 48px;
+    font-family: 'Inter', 'Fira Code', sans-serif;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+#about-us h2 .gradient-text {
+    background: linear-gradient(135deg, var(--neon-blue) 0%, #0066CC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#about-us .about-description {
+    font-size: 1.5rem;
+    color: #444;
+    line-height: 2;
+    margin-bottom: 56px;
+}
+
+#about-us .about-description .highlight {
+    color: #0A2540;
+    border-bottom: 3px solid rgba(0, 209, 255, 0.4);
+    font-weight: 600;
+}
+
+/* CTA 按钮 */
+.cta-btn-modern {
+    background: #0A2540;
+    color: white;
+    padding: 24px 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 0;
+}
+
+.cta-btn-modern:hover {
+    background: var(--neon-red);
+    padding-right: 60px;
+    box-shadow: 0 10px 30px rgba(230, 57, 70, 0.3);
+    color: white;
+}
+
+.cta-btn-modern i {
+    transition: transform 0.3s ease;
+}
+
+.cta-btn-modern:hover i {
+    transform: translateX(5px);
+}
+
+/* About Us 响应式 */
+@media (max-width: 1200px) {
+    #about-us h2 {
+        font-size: 3.5rem;
+    }
+    
+    #about-us .about-left {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-title-bg {
+        font-size: 10rem;
+    }
+    
+    #about-us h2 {
+        font-size: 3rem;
+    }
+    
+    .glass-card h4 {
+        font-size: 1.75rem;
+    }
+    
+    .glass-card p {
+        font-size: 1.125rem;
+    }
+    
+    #about-us .about-description {
+        font-size: 1.375rem;
+    }
+    
+    .metric-number {
+        font-size: 3rem;
+    }
+    
+    .metric-label {
+        font-size: 0.75rem;
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) {
+    #about-us .about-left {
+        padding-right: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    #about-us h2 {
+        font-size: 3rem;
+    }
+    
+    .about-badge {
+        justify-content: center;
+    }
+    
+    #about-us .about-description {
+        text-align: center;
+    }
+    
+    .cta-btn-modern {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #about-us {
+        padding: 100px 0;
+    }
+    
+    .section-title-bg {
+        font-size: 6rem;
+        top: -30px;
+    }
+    
+    #about-us h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .glass-card {
+        padding: 32px;
+        margin-bottom: 28px;
+    }
+    
+    .glass-card h4 {
+        font-size: 1.5rem;
+    }
+    
+    .glass-card p {
+        font-size: 1.0625rem;
+    }
+    
+    .metric-card {
+        padding: 28px 15px;
+        margin-bottom: 20px;
+        min-height: 110px;
+    }
+    
+    .metric-number {
+        font-size: 2.25rem;
+    }
+    
+    .metric-label {
+        font-size: 0.65rem;
+    }
+    
+    #about-us .about-left {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    
+    #about-us .about-description {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    .cta-btn-modern {
+        margin: 0 auto;
+        padding: 20px 45px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-us {
+        padding: 70px 0;
+    }
+    
+    .section-title-bg {
+        font-size: 4rem;
+    }
+    
+    #about-us h2 {
+        font-size: 2rem;
+        white-space: normal;
+        word-break: keep-all;
+    }
+    
+    .cta-btn-modern {
+        padding: 18px 36px;
+        font-size: 13px;
+    }
+    
+    .metric-number {
+        font-size: 1.75rem;
+    }
+    
+    .metric-label {
+        font-size: 0.6rem;
+    }
+    
+    .glass-card .group-number {
+        font-size: 3rem;
+    }
+    
+    .glass-card h4 {
+        font-size: 1.25rem;
+    }
+    
+    .glass-card p {
+        font-size: 1rem;
+    }
+    
+    #about-us .about-description {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+}

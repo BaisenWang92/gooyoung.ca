@@ -1,0 +1,25 @@
+<svg viewBox="0 0 100 100" width="100" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景几何辅助线 -->
+  <path d="M50 5 L90 25 L90 75 L50 95 L10 75 L10 25 Z" fill="none" stroke="#005670" stroke-width="0.5" stroke-dasharray="2 2"/>
+  
+  <!-- 核心字母 G：浅青色 -->
+  <path d="M75 35 C70 25 55 20 40 25 C25 30 20 45 25 60 C30 75 45 80 60 75 L60 55 L45 55" 
+        stroke="#00D1FF" stroke-width="6" stroke-linecap="square" fill="none" filter="url(#glow)"/>
+  
+  <!-- 亮红对比元素 -->
+  <path d="M82 42 L92 50 L82 58" stroke="#E63946" stroke-width="5" stroke-linecap="square" fill="none" filter="url(#glow)"/>
+  <path d="M18 42 L8 50 L18 58" stroke="#005670" stroke-width="5" stroke-linecap="square" fill="none"/>
+  
+  <!-- 核心节点 -->
+  <circle cx="60" cy="55" r="2.5" fill="#E63946" filter="url(#glow)"/>
+</svg>

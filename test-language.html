@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switch Test - Gooyoung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .language-switch {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        .language-switch a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background: #ddd;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .language-switch a.active {
+            background: #ff6b6b;
+            color: white;
+            font-weight: bold;
+        }
+        .language-switch a:hover {
+            background: #999;
+            color: white;
+        }
+        .test-content {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 4px solid #ff6b6b;
+        }
+        .test-content h2 {
+            color: #ff6b6b;
+            margin-top: 0;
+        }
+        .test-content p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .status {
+            text-align: center;
+            padding: 10px;
+            background: #e8f5e9;
+            border-radius: 4px;
+            color: #2e7d32;
+            margin: 20px 0;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 data-i18n="nav.home">Home</h1>
+        
+        <div class="language-switch">
+            <a href="javascript:void(0)" id="lang-en" class="active" onclick="switchLanguage('en'); return false;">English (EN)</a>
+            <span>/</span>
+            <a href="javascript:void(0)" id="lang-zh" onclick="switchLanguage('zh'); return false;">中文 (ZH)</a>
+        </div>
+
+        <div class="status">
+            当前语言 / Current Language: <strong id="current-lang">English</strong>
+        </div>
+
+        <div class="test-content">
+            <h2 data-i18n="about.title">About</h2>
+            <p data-i18n="about.description">Description...</p>
+        </div>
+
+        <div class="test-content">
+            <h2 data-i18n="services.title">Services</h2>
+            <p data-i18n="services.description">Services description...</p>
+        </div>
+
+        <div class="test-content">
+            <h2>导航菜单测试 / Navigation Menu Test</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li><code data-i18n="nav.home">HOME</code></li>
+                <li><code data-i18n="nav.about">ABOUT</code></li>
+                <li><code data-i18n="nav.services">SERVICES</code></li>
+                <li><code data-i18n="nav.portfolio">PORTFOLIO</code></li>
+                <li><code data-i18n="nav.team">TEAM</code></li>
+                <li><code data-i18n="nav.skills">SKILLS</code></li>
+                <li><code data-i18n="nav.clients">CLIENTS</code></li>
+                <li><code data-i18n="nav.pricing">PRICING</code></li>
+                <li><code data-i18n="nav.blog">BLOG</code></li>
+                <li><code data-i18n="nav.contact">CONTACT</code></li>
+            </ul>
+        </div>
+
+        <div class="status" id="debug-info">
+            Debug Info: Ready
+        </div>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script>
+        // Override switchLanguage to show language change
+        var originalSwitchLanguage = switchLanguage;
+        switchLanguage = function(lang) {
+            originalSwitchLanguage(lang);
+            document.getElementById('current-lang').textContent = lang === 'en' ? 'English' : '中文';
+            document.getElementById('debug-info').textContent = '✓ Language switched to: ' + (lang === 'en' ? 'English' : '中文');
+        };
+
+        // Initialize
+        window.addEventListener('load', function() {
+            document.getElementById('current-lang').textContent = currentLang === 'en' ? 'English' : '中文';
+        });
+    </script>
+</body>
+</html>
